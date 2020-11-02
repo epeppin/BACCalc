@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eric's BAC Calculator</title>
+    <style>
+        label {
+            padding: .5em;
+        }
+
+        input, button {
+            margin-left: 3em;
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        body {
+            background: lightblue;
+        }
+
+        .display {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Blood Alcohol Calculator</h1>
+</header>
+<br/>
+<fieldset>
+    <label for="numBeers">Number of Beers Consumed:</label>
+    <input type="number" name="numBeers" id="numBeers" value="0">
+
+    <label for="numWine">Glasses of Wine Consumed:</label>
+    <input type="number" name="numWine" id="numWine" value="0">
+
+    <label for="numShots">Number of Shots Consumed:</label>
+    <input type="number" name="numShots" id="numShots" value="0">
+
+    <label for="numWeight">Your Weight in Pounds:</label>
+    <input type="number" name="numWeight" id="numWeight" value="0">
+
+    <label for="numHours">Hours Since your Last drink:</label>
+    <input type="number" name="numHours" id="numHours" value="0">
+
+    <input type="submit" name="submitButton" id="submitButton" value="Calculate my BAC">
+
+</fieldset>
+
+<h2 class="display">Your Blood Alcohol Content (BAC) is: <span id="totalBAC"></span>%</h2>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
